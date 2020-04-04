@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework</title>
+	<link rel="stylesheet" type="text/css" href="forms.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<fieldset class="main-field">
+		<legend>SGEM Profile</legend>
+		<h3> Here you can create your profile!</h3>
+		<fieldset class="info">
+			<legend>Personal info</legend>
+			<form action="" method="post">
+				<p>
+					<label for="gender">Mr/ Mrs <span class="red">*</span></label>
+					<select name="gender" id="gender">
+						<option></option>
+						<option>Mr</option>
+						<option>Mrs</option>
+					</select>
+				</p>
+				<p>
+					<label for="title">Title: <span class="red">*</span></label>
+					<select name="title" id="title">
+						<option></option>
+						<option>Mr</option>
+						<option>Mrs</option>
+						<option>D-r</option>
+						<option>Miss</option>
+						<option>Sir</option>
+						<option>Baron</option>
+					</select>
+				</p>
+				<p>
+					<label class="bold" for="name">Name <span class="red">*</span></label>
+					<input type="text" name="name" id="name">				
+				</p>
+				<p>
+					<label class="bold" for="lname">Last name <span class="red">*</span></label>
+					<input type="text" name="lname" id="lname">				
+				</p>
+				<p>
+					<label class="bold important icon" for="uname">Username <span class="red">*</span></label>
+					<input type="text" name="uname" id="uname">				
+				</p>
+				<p>
+					<label class="icon" for="password">Password <span class="red">*</span></label>
+					<input type="password" name="password" id="password">
+				</p>
+				<p>
+					<label for="rpassword">Password <br /> repeat <span class="red">*</span></label>
+					<input type="password" name="rpassword" id="rpassword">
+				</p>
+
+				
+			</form>
+		</fieldset>
+
+		<fieldset class="info">
+			<legend>Busines info</legend>
+			<p>
+					<label class="icon" for="country">Country <span class="red">*</span></label>
+					<select name="country" id="country">
+						<option selected>Please select</option>
+						<option>Bulgaria</option>
+						<option>United Kingdom</option>
+						<option>United States of America</option>
+					</select>
+				</p>
+				<p>
+					<label class="icon" for="uni">University name: <span class="red">*</span></label>
+					<select name="uni" id="uni">
+						<option></option>
+						<option>University</option>
+						<option>University 2</option>
+						<option>University 3</option>
+						<option>University 4</option>
+						<option>University 5</option>
+					</select>
+				</p>
+				<p>
+					<label class="icon" for="university">Add new University</label>
+					<input type="checkbox" name="uni" id="university">				
+				</p>
+				<p>
+				<label for="city">City <span class="red">*</span></label>
+					<input type="text" name="city" id="city">				
+				</p>
+				<p>
+					<label for="adress">Adress <span class="red">*</span></label>
+					<input type="text" name="adress" id="adress">				
+				</p>
+				<p>
+					<label class="icon" for="phone">Phone <span class="red">*</span></label>
+					<input type="text" name="phone" id="phone">				
+				</p>
+				<p>
+					<label class="important" for="mail">Email <span class="red">*</span></label>
+					<input type="emai" name="email" id="mail">
+				</p>
+				<p>
+					<label class="important" for="rmail">Email repeat<span class="red">*</span></label>
+					<input type="emai" name="remail" id="rmail">
+				</p>
+		</fieldset>
+	</fieldset>
+
+</body>
+</html>
