@@ -1,0 +1,80 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="mycss.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="shop-body">
+	<nav>
+		<ul>
+			<li><a href="index.html">Начало</a></li>
+			<li><a href="shop.html">Магазин</a></li>
+			<li><a href="casino.html">Казино</a></li>
+			<li class="relative"><a href="#" class="cart" onclick="cartContent();return false;"><i class="fas fa-shopping-cart"></i><span id="cartCount">0</span></a>
+				<div class="relative">
+					<p id="cart-contain">
+						<p id="cart-total-price"></p>
+					</p>
+				</div>
+			</li>
+
+		</ul>
+	</nav>
+	<div class="row first-row">
+		<div class="col">
+			<p>
+				Избери вид продукт:
+				<select name="type" id="type">
+					<option value="0">Избери</option>
+					<option value="1">Хлебни изделия</option>
+					<option value="2">Плодове и зеленчуци</option>
+					<option value="3">Месни</option>
+
+				</select>
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<p>
+				<select class="selected" multiple size="5" class="products" data-class="1">
+					<option value="2" data-src="images/hlyab.jpg">Хляб</option>
+					<option value="1" data-src="images/kroasani.jpg" >Кроасани</option>
+					<option value="3" data-src="images/kifli.jpg">Кифли</option>		
+				</select>
+
+				<select  class="selected" multiple size="5"  data-class="2">
+					<option value="1" data-src="images/domati.jpg"  data-recepta="https://recepti.gotvach.bg/?kw=%D0%B4%D0%BE%D0%BC%D0%B0%D1%82%D0%B8">Домати</option>
+					<option value="2" data-src="images/portokali.jpg">Портокали</option>
+					<option value="1" data-src="images/mandarini.jpg">Мандарини</option>		
+				</select>
+
+				<select  class="selected" multiple size="5" class="products" data-class="2">
+					<option value="2" data-src="images/meso.jpg" data-recepta="https://recepti.gotvach.bg/%D1%8F%D1%81%D1%82%D0%B8%D1%8F" >Месо</option>
+					<option value="10" data-recepta="https://recepti.gotvach.bg/riba" data-src="images/riba.png">Риба</option>
+					<option value="4" data-src="images/pile.jpg" data-recepta="https://recepti.gotvach.bg/%D0%BF%D0%B8%D0%BB%D0%B5%D1%88%D0%BA%D0%BE" >Пиле</option>		
+				</select>
+				<div class="product-content">
+					<img src="" id="image" />
+					<a id="cartLink" href="#" onclick="addToCard();return false;">Добави в количката</a>
+					<p id="price"></p>
+					
+				</div>
+			</p>
+			<p id="recepta"></p>
+		</div>
+	</div>
+
+
+		
+			<div class="inlineB"><p>Сметката Ви е общо: </p><p id="total">0</p><p>лв.</p></div>
+			<div><p>Бюджетът ви е : <span id="budget"></span></p></div>
+		</div>
+
+		<div id="info"></div>
+		<button>Изтегли в таблица за пазаруване</button>
+	
+	<script src="js/shop.js"></script>
+</body>
+</html>

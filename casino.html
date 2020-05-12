@@ -1,0 +1,46 @@
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+	<title>Document</title>
+	<link rel="stylesheet" href="mycss.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="casino-body">
+	<nav>
+		<ul>
+			<li><a href="index.html">Начало</a></li>
+			<li><a href="shop.html" onclick="getbudget();">Магазин</a></li>
+			<li><a href="casino.html">Казино</a></li>
+			<li class="relative"><a href="#" class="cart" onclick="cartContent();return false;"><i class="fas fa-shopping-cart"></i><span id="cartCount">0</span></a>
+				<div class="relative">
+					<p id="cart-contain">
+						<p id="cart-total-price"></p>
+					
+				</div>
+			</li>
+
+		</ul>
+	</nav>
+<div class="heading-text">
+	Пробвай късмета си 
+</div>
+ <div class="container">
+ 	<div class="row">
+			<div class="col"><img class="casino-image" src="images/casino/question-reset.png" data-id="start" alt=""></div>
+ 			<div class="col"><img class="casino-image" src="images/casino/question.png" alt=""></div>
+ 			<div class="col"><img class="casino-image" src="images/casino/question.png" alt=""></div>
+ 	</div>
+ 	<div class="buttons">
+ 		<a href="#" onclick="casino();return false;" class="roulette">Опитай си късмета</a>
+		<a href="shop.html" onclick="getbudget()" class="roulette">Към магазина</a>
+ 	</div>
+ </div>
+
+ <div id="info"></div>
+
+ <div><p>Бюджетът ви е : <span id="budget"></span>лв.</p></div>
+
+<script src="js/casino.js"></script>
+
+</body>
+</html>

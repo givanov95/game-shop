@@ -1,0 +1,352 @@
+/*reset*/
+
+*{
+	padding:0;
+	margin:0;
+}
+
+html{
+	font:14px/1.5 'Open Sans', sans-serif;
+	color:#222;
+	box-sizing: border-box;
+	 scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+   a{ color: white; cursor: pointer; text-decoration: none; background-color:
+transparent; } /*end_reset*/
+
+/*typogr*/
+body, form, input, textarea, option, select, button{
+	font:inherit;
+}
+img{ 
+max-width: 100%;
+height: auto; }
+
+h2{
+font-size: 42px;
+font-weight: bold;
+color:white;
+margin-bottom: 3%;
+
+}
+
+h3{ 
+font-weight: bold;
+text-align: center;
+margin:1% 0; 
+font-size: 2em;
+
+ }
+
+/*end_typogr*/
+
+
+ /*pages*/
+
+  	/*home*/
+
+
+.home-body  {
+background-image:
+   linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+    url(images/js-bg.png);
+    background-attachment: fixed;
+       background-repeat: no-repeat,
+      no-repeat,
+      no-repeat;
+  background-position: bottom right,
+      left,
+      right; 
+
+  }
+
+.home-message { 
+	position: absolute;
+ top: 40%;
+ width: 100%;
+ text-align: center;
+ }
+
+  .home-message p {
+  	 color: white;
+  	 font-weight: bold;
+  	 font-size: 2em;
+  }
+
+  .button { 
+  border:1px solid white;
+  display: inline-block;
+  padding:.5em;
+  border-radius: 5px; }
+  	
+  	/*end-home*/
+
+  	/*shop*/
+
+.delete { 
+color:black;
+ }
+
+#recepta {
+margin-top:4em; 
+ }
+
+.shop-body { 
+background-image:
+   linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+    url(images/shop.jpg);
+    background-attachment: fixed;
+       background-repeat: no-repeat,
+      no-repeat,
+      no-repeat;
+  background-position: bottom right,
+      left,
+      right; 
+
+ }
+
+ nav { 
+ background: rgb(0,0,0,0.5);
+ height: 10vh;
+  }
+
+nav ul { 
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+ }
+
+ li { 
+ flex-basis: 17%;
+ list-style: none;
+ 
+
+  }
+
+  li a {
+  	font-size: 2em;
+  	 position:relative;
+  }
+
+  .first-row { 
+  margin-top:2%; }
+
+  .cart { 
+  border:1px solid white; 
+	border-radius: 100px; 
+	padding:.3em .3em;
+	}
+	
+	table { 
+	width: 100%;
+	background: white;
+	border-radius: 5px;
+	  }
+
+	 .relative { 
+	 position: relative;
+	  }
+
+	#cart-contain { 
+	position: absolute;
+	left:-50%;
+	display: none;
+
+	 }
+
+		#cart-total-price { 
+    font-size: 1em;
+    margin-top: 5%;
+    position: absolute;
+    left: -50%;
+    color: black;
+   	font-weight: bold;
+   	display: none;
+}
+
+	#cart-contain table td { 
+	color: black;
+	width: 33%;
+	border-bottom: 1px solid #ccc; 
+
+	 }	
+	
+	#cartCount { 
+	font-size: .5em;
+	position: absolute;
+	top:0;
+	 left: 100%;
+	 border:1px solid white;
+	 border-radius: 100px;
+	 padding: 0 .5em;
+		 }
+
+	p { 
+	color:white;
+	font-size: 2em;
+	 }
+
+	 .inlineB { 
+	 margin-top: 
+	 5em;
+	  }
+	 .inlineB p {
+	 	display: inline-block;
+	 }
+
+	
+
+ .selected, #cartlink {
+	display: none;
+	 float: left;
+    margin: 2%;
+}
+
+.product-content { 
+position: relative;
+display: inline-block;
+margin:6% 0 2% 10%;
+display: none;
+ }
+
+
+ #cartLink, #price { 
+ position: absolute;
+/* display: none;*/
+  }
+
+ #cartLink { 
+ top: 67%;
+ font-size: 2em;
+ width: 100%;
+ text-align: center; 
+}
+
+  #price { 
+  top:100%;
+   }
+
+  .product-content:hover #price{
+
+display: block;
+  }
+
+    .product-content:hover #cartLink{
+
+display: block;
+  }
+
+  .product-content:hover img { 
+  opacity: 0.8;
+   }
+
+  	/*end-shop*/
+
+    /*casino*/
+
+.casino-body { 
+background-image:
+   linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+    url(images/casino.jpg);
+    background-attachment: fixed;
+       background-repeat: no-repeat,
+      no-repeat,
+      no-repeat;
+  background-position: bottom right,
+      left,
+      right; 
+      background-size: cover;
+
+ }
+
+.casino-body .container { 
+text-align: center;
+width: 100%;
+ margin-top: 5%; 
+}
+
+.casino-body .row { 
+display: inline-flex;
+justify-content: center;
+background:white;
+padding:1em;
+border-radius: 5px;
+
+ }
+
+ .roulette { 
+ color:black; }
+
+ .casino-body .col { 
+ padding: 2em 5em 2em;
+ border-right: 1px solid #ccc;
+
+}
+  
+  .casino-body .col:last-child { 
+  border:none;
+   }  
+
+   .roulette { 
+color: black;
+}
+
+  .casino-body .buttons { 
+background: white; 
+display: inline-flex;
+width: 50%;
+margin-top: 2%;
+height: auto;
+border-radius: 5px;
+ 
+}
+
+.buttons a  {
+border:1px solid #ccc;
+padding: 1em ;
+border-radius: 5px;
+width: 50%;
+
+}
+
+.buttons a:first-child { 
+margin-right: 1em; 
+}
+
+#info { 
+z-index: 999;
+    font-size: 3em;
+    top: 50vh;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+}
+#close { 
+position: absolute;
+    top: -10%;
+    right: 12px;
+    cursor:pointer;
+} 
+
+.game-over{    
+    width: 100%;
+    margin-top: 25%;
+    font-size: 5em;
+    color: white;
+    text-align: center;
+  }
+.game-over a { 
+
+color:blue;
+}
+
+      /*end-casino*/
+
+
